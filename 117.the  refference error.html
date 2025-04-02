@@ -1,0 +1,40 @@
+<!--   
+Error Name Values
+
+Six different values can be returned by the error name property:
+
+Error Name	       Description
+
+EvalError	     An error has occurred in the eval() function
+RangeError   	  A number "out of range" has occurred
+ReferenceError	  An illegal reference has occurred
+SyntaxError	      A syntax error has occurred
+TypeError	      A type error has occurred
+URIError	      An error in encodeURI() has occurred   
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>the refference error</h2>
+    <p>you cannot us ethe value of  a non existing variables</p>
+
+    <p id="demo"></p>
+
+    <script>
+        let x =5;
+        try {
+            x = y + 1;
+        }
+        catch (err) {
+            document.getElementById("demo").innerHTML =  err.name;
+        }
+    </script>
+</body>
+</html>

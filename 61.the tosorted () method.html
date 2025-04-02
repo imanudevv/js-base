@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        const months =["jan","feb","mar","apr"];
+        const sorted = months.toSorted();
+        document.getElementById("demo").innerHTML = sorted;
+        //The difference between toSorted() and sort()
+// is that the first method (toSorted()) creates a new array,
+ //keeping the original array unchanged,
+ // while the last method  (sort())  alters the original array.
+    </script>
+</body>
+</html>

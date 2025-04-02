@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        // Create a Set
+        const letters = new Set(["a", "b", "c"]);
+
+        // Create an iterator
+        const myIterator = letters.entries();
+
+        // List all elements
+        let text = "";
+        for (const entry of myIterator) {
+            text += entry[0] + "  " + entry[1] + "<br>"; // Extract values properly
+        }
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+
+</body>
+</html>

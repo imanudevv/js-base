@@ -1,0 +1,58 @@
+<!---  
+
+
+
+Function Scope
+JavaScript has function scope: Each function creates a new scope.
+
+Variables defined inside a function are not accessible (visible) from outside the function.
+
+Variables declared with var, let and const are quite similar when declared inside a function.
+
+They all have Function Scope:
+
+-->
+
+
+function myFunction() {
+    var carName = "Volvo";   // Function Scope
+  }
+
+
+
+
+  function myFunction() {
+    let carName = "Volvo";   // Function Scope
+  }
+
+
+
+
+
+  function myFunction() {
+    const carName = "Volvo";   // Function Scope
+  }
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<bod
+<p id="demo1"></p> 
+<p id="demo2"></p>
+
+<script>
+    myFunction();
+
+    function myFunction() {
+        let carName = "Volvo";
+        document.getElementById("demo1").innerHTML = typeof carName + " " + carName;
+    }
+
+    document.getElementById("demo2").innerHTML= typeof carName;
+</script>
+</body>
+</html>

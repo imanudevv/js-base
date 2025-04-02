@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!----    
+JavaScript Maps
+A Map holds key-value pairs where the keys can be any datatype.
+
+A Map remembers the original insertion order of the keys.
+
+How to Create a Map
+You can create a JavaScript Map by:
+
+Passing an Array to new Map()
+Create a Map and use Map.set()
+
+-->
+<h2>the new map method()</h2>
+
+<p id="demo"></p>
+
+<script>
+    //create a map
+    const fruits = new Map([
+        ["apples", 500],
+        ["banana", 300],
+        ["oranges", 200]
+    ]);
+
+    let numb = fruits.get("apples");
+    document.getElementById("demo").innerHTML = "There are " + numb + " apples.";
+</script>
+</body>
+</html>

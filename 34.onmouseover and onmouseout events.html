@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2></h2>
+
+ <img  onmouseover="bigimg(this)"
+ onmouseout="mormalimg(this)" border="0"
+ src="11.png"  alt="smiley"  width="12" height="12">
+
+ <p></p>
+
+ <script>
+    function bigimg(x) {
+        x.style.width = "64px";
+        x.style.height = "64px";
+    }
+
+    function normalimg(x){
+        x.style.width = "32px";
+        x.style.height = "32px";  
+    }
+ </script>
+</body>
+</html>

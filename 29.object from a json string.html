@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>creating an object from a json string</h2>
+    <h3>when receiving data from a web server , the data is always a string</h3>
+
+    <h3>parse  the data with json.parse (), and the data becomes a java script object.</h3>
+
+
+    <p id="demo"></p>
+
+    <script>
+        const txt = '{"name": "John", "age": 30, "city": "New York"}';
+        const obj = JSON.parse(txt);
+        document.getElementById("demo").innerHTML = obj.name + ", " + obj.age;
+    </script>
+</body>
+</html>

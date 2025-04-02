@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>the add() method adds values to a set:</p>
+
+    <p id="demo"></p>
+
+    <script>
+        //create a set
+        const letters = new Set();
+
+        //add values to the set
+        letters.add("a");
+        letters.add("b");
+        letters.add("c");
+        //display the size
+        document.getElementById("demo").innerHTML = " the Set has " + letters.size + " values.";
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>remove last two items from array using splice</h2>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        const fruits = ["banana", "apple", "orange", "grape","mango"];
+
+        fruits.splice(-2,2);
+
+        document.getElementById("demo").innerHTML =fruits;
+
+
+
+
+
+        //The splice method is used to add or remove elements from an array
+//start: -2, which means start from the second-to-last element of the array (counting from the end).
+//deleteCount: 2, which means remove 2 elements from the array, starting from the start index.
+    </script>
+</body>
+</html>

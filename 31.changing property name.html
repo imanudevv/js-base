@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript object constructor</h1>
+    <h2>changing property values</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        //constructor function for person objects
+
+        function person(first, last, age1,eye) {
+            this.firstname = first;
+            this.lastname = last;
+            this.age = age1;
+            this.eyecolor = eye;
+        }
+
+        //create a person object
+        const mymother = new person("sally","rally",48,"green");
+
+        person.prototype.changeName = function (name) {
+            this.lastname= name;
+        }
+
+        //change Name 
+        mymother.changeName("doe");
+
+        //display name
+        document.getElementById("demo").innerHTML =
+        "My mother's last name is " +  mymother.lastname ;
+        </script>
+</body>
+</html>

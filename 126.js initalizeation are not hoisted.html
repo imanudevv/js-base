@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Initializations are Not Hoisted</h1>
+
+    <h1>JavaScript only hoists declarations, not initializations.</h1>
+
+    <h1>Example 1 does not give the same result as Example 2:</h1>
+
+
+    <p id="demo"></p>
+
+    <script>
+         var x=5;
+         var y=7;
+
+        elem = document.getElementById("demo");
+        elem.innerHTML = x + " " + y; // Display x and y
+
+    </script>
+</body>
+</html>

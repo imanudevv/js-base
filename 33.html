@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>select a new car from the list.</p>
+
+    <select id="myselect" onchange="myfunction()">
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="Mercedes">mercedes</option>
+        <option value="volvo">volvo</option>
+
+    </select>
+
+    <p></p>
+
+    <p id="demo"></p>
+
+    <script>
+        function myfunction() {
+            var x = document.getElementById("myselect").value;
+            document.getElementById("demo").innerHTML = "You selected " + x;
+        }
+    </script>
+</body>
+</html>

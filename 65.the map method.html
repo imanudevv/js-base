@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The map() method creates a new array by performing a function on each array element. <br>
+        The map() method does not execute the function for array elements without values. <br>
+        The map() method does not change the original array.</p><br>
+    
+    <p>Create a new array by performing a function on each array element:</p>
+    <p id="demo"></p>
+
+    <script>
+        const numbers1 = [45,4,9,16,25]
+        const numbers2 = numbers1.map(myFunction);
+
+        document.getElementById("demo").innerHTML = numbers2;
+        function myFunction(value) {
+            return value *2;
+        }
+    </script>
+</body>
+</html>

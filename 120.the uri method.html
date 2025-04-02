@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>the uri method</h2>
+    <p>some characters connot be with decode():</p>
+    <p id="demo"></p>
+
+    <script>
+        try {
+            decodeURI("%%%")
+
+        }
+        catch(err){
+            document.getElementById("demo").innerHTML =err.name;
+        }
+    </script>
+</body>
+</html>

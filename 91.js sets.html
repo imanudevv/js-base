@@ -1,0 +1,37 @@
+<!--   
+JavaScript Sets
+
+A JavaScript Set is a collection of unique values.
+
+Each value can only occur once in a Set.
+
+The values can be of any type, primitive values or objects.
+
+How to Create a Set
+You can create a JavaScript Set by:
+
+Passing an array to new Set()
+Create an empty set and use add() to add values
+   
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>create a set from an array</p>
+
+    <p id="demo"></p>
+
+    <script>
+        //create a set
+        const letters = new Set(["a", "b", "C"]);
+
+        //display set.size
+        document.getElementById("demo").innerHTML = " the Set has " + letters.size + " values.";
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>press a key in the input field :</p>
+    <input type="text" onkeydown="myfunction()">
+    <p id="demo"></p>
+
+    <script>
+        function myfunction(){
+            document.getElementById("demo").innerHTML ="you pressed a key inside the input field";
+            }
+        
+    </script>
+</body>
+</html>

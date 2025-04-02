@@ -1,0 +1,35 @@
+<!-- 
+JavaScript Errors
+
+Throw, and Try...Catch...Finally
+
+The try statement defines a code block to run (to try).
+
+The catch statement defines a code block to handle any error.
+
+The finally statement defines a code block to run regardless of the result.
+
+The throw statement defines a custom error. 
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>how to use <b>catch</b> to dispaly an error.</p>
+    <p id="demo"></p>
+    <script>
+        try {
+            addqlert("Welcome guest!")
+        }
+
+        catch(err) {
+            document.getElementById("demo").innerHTML =  err.message;
+        }
+    </script>
+</body>
+</html>

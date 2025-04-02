@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        //create an array
+        const numbers = [10,20,30,40,50,60,70];
+
+        //destructuring
+        const [a,b, ... rest] = numbers;
+
+        //display the values
+        document.getElementById("demo").innerHTML = 
+        "<p>a is " + a + "<p>b is " + b + "<p>rest is " + rest;
+    </script>
+</body>
+</html>
